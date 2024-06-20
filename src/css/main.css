@@ -1,4 +1,5 @@
 /*--------------------------- Color variations ----------------------*/
+/* customize fuzable 2024 June */
 /* Medium Layout: 1280px */
 /* Tablet Layout: 768px */
 /* Mobile Layout: 320px */
@@ -1166,12 +1167,12 @@ td, th {
   top: 0;
   width: 50%;
   height: 100%;
-  background: #404598;
+  background: rgba(91, 97, 207, 0.95);
   z-index: 2;
 }
 @media (max-width: 991px) {
   .studio-area:before {
-    background: rgba(64, 69, 152, 0.95);
+    background: rgba(60, 64, 143, 0.95);
     width: 100%;
   }
 }
@@ -1195,7 +1196,7 @@ td, th {
   margin-top: 30px;
 }
 .single-pricing-table .top {
-  background-image: -ms-linear-gradient(0deg, rgb(60, 64, 143) 0%, rgb(91, 97, 207) 100%);
+  background-image: -ms-linear-gradient(0deg, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
 }
 .single-pricing-table .top .head {
   padding: 35px 20px;
@@ -1310,7 +1311,7 @@ td, th {
 }
 
 .cta-area {
-  background: #3d4191;
+  background: rgba(91, 97, 207, 0.95);
   padding: 60px 0;
 }
 @media (max-width: 767px) {
@@ -1396,4 +1397,4 @@ footer .footer-nav li a:hover {
 }
 .footer-bottom .footer-text a:hover {
   color: #00ff8c;
-}/*# sourceMappingURL=main.css.map */
+}

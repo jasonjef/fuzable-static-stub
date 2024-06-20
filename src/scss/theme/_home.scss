@@ -88,9 +88,9 @@
 	height: 350px;
 	position: relative;
 	.overlay-bg-content {
-		background: -moz-linear-gradient(left, rgba(60,64,143,.95) 0%, rgba(91,97,207,.95) 100%);
-		background: -webkit-linear-gradient(left, rgba(60,64,143,.95) 0%,rgba(91,97,207,.95) 100%);
-		background: linear-gradient(to right, rgba(60,64,143,.95) 0%,rgba(91,97,207,.95) 100%);
+		background: -moz-linear-gradient(left, $grad-start 0%, $grad-end 100%);
+		background: -webkit-linear-gradient(left, $grad-start 0%,$grad-end 100%);
+		background: linear-gradient(to right, $grad-start 0%,$grad-end 100%);
 		text-align: center;
 		padding: 50px 100px;
 		p {
@@ -144,9 +144,9 @@
 		background-size: cover !important;
 		height: 300px;
 		.overlay-member {
-			background: -moz-linear-gradient(left, rgba(60,64,143,.95) 0%, rgba(91,97,207,.95) 100%);
-			background: -webkit-linear-gradient(left, rgba(60,64,143,.95) 0%,rgba(91,97,207,.95) 100%);
-			background: linear-gradient(to right, rgba(60,64,143,.95) 0%,rgba(91,97,207,.95) 100%);
+			background: -moz-linear-gradient(left, $grad-start 0%, $grad-end 100%);
+			background: -webkit-linear-gradient(left, $grad-start 0%,$grad-end 100%);
+			background: linear-gradient(to right, $grad-start 0%,$grad-end 100%);
 			text-align: center;
 			padding: 30px;
 			p {
@@ -208,10 +208,10 @@
 		top: 0;
 		width: 50%;
 		height: 100%;
-		background: #404598;
+		background: $grad-end;
 		z-index: 2;
 		@include media-breakpoint-down (md) {
-			background: rgba(#404598, .95);
+			background: $grad-start;
 			width: 100%;
 		}
 	}
@@ -236,9 +236,9 @@
 .single-pricing-table {
 	margin-top: 30px;
 	.top {
-		background-image: -moz-linear-gradient( 0deg, rgb(60,64,143) 0%, rgb(91,97,207) 100%);
-		background-image: -webkit-linear-gradient( 0deg, rgb(60,64,143) 0%, rgb(91,97,207) 100%);
-		background-image: -ms-linear-gradient( 0deg, rgb(60,64,143) 0%, rgb(91,97,207) 100%);
+		background-image: -moz-linear-gradient( 0deg, $grad-start 0%, $grad-end 100%);
+		background-image: -webkit-linear-gradient( 0deg, $grad-start 0%, $grad-end 100%);
+		background-image: -ms-linear-gradient( 0deg, $grad-start 0%, $grad-end 100%);
 		.head {
 			padding: 35px 20px;
 			span {
@@ -343,7 +343,7 @@
 		&:focus {
 			outline: none;
 			border: 1px solid transparent;
-			box-shadow: 0px 10px 20px 0px rgba(60, 64, 143, 0.2);
+			box-shadow: 0px 10px 20px 0px $shadow;
 		}
 	}
 	textarea {
@@ -358,13 +358,13 @@
 		&:focus {
 			outline: none;
 			border: 1px solid transparent;
-			box-shadow: 0px 10px 20px 0px rgba(60, 64, 143, 0.2);
+			box-shadow: 0px 10px 20px 0px $shadow;
 		}
 	}
 }
 
 .cta-area {
-	background: #3d4191;
+	background: $grad-end;
 	padding: 60px 0;
 	.primary-btn {
 		@include mobile {
